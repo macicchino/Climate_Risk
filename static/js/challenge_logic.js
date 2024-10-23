@@ -1,6 +1,47 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
+
+//		--------------------------------  ADD HURRICANE UPDATE  -----------------------------
+
+/*
+
+// Initialize the map
+var map = L.map('map').setView([37.8, -96], 4); // Adjust the coordinates and zoom level as needed
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Function to fetch and display hurricane data
+function fetchHurricaneData() {
+  fetch('https://api.weather.gov/alerts/active?event=Hurricane')
+    .then(response => response.json())
+    .then(data => {
+      data.features.forEach(function(hurricane) {
+        let coordinates = hurricane.geometry.coordinates;
+        let properties = hurricane.properties;
+
+        // Add a marker to the map for each hurricane
+        L.marker([coordinates[1], coordinates[0]])
+          .bindPopup(`<h3>${properties.headline}</h3><p>${properties.description}</p>`)
+          .addTo(map);
+      });
+    })
+    .catch(error => console.error('Error fetching hurricane data:', error));
+}
+
+// Call the function to fetch and display hurricane data
+fetchHurricaneData();
+
+*/
+//		--------------------------------  ADD HURRICANE UPDATE -----------------------------
+
+
+
+
+
+
 // We create the tile layer that will be the background of our map.
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
