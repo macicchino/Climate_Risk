@@ -25,6 +25,12 @@ https://macicchino.github.io/Climate_Risk/
 7. Add in Tornado Data 
 8. Add in Wildfire Data
 
+## Analysis 
+
+1. Identify Trends
+2. Import Financial Data
+  - Hypothesis / AB Testing
+
 
 ## Resources & Template
 
